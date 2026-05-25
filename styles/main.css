@@ -1,1 +1,50 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  min-height: 100vh;
+  background-color: hsl(185, 41%, 84%);
+  font-family: "Space Mono", monospace;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font-family: "Space Mono", monospace;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+ul, li, img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Space Mono", monospace;
+  vertical-align: baseline;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}/*# sourceMappingURL=main.css.map */
