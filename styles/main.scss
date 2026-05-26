@@ -7,6 +7,12 @@
   * {
     margin: 0;
   }
+
+  html, body {
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+  }
   
   body {
     line-height: 1.5;
@@ -15,6 +21,7 @@
     min-height: 100vh;
     background-color: hsl(185, 41%, 84%); // Light grayish cyan
     font-family: 'Space Mono', monospace;
+    
   }
   
   img, picture, video, canvas, svg {
@@ -79,9 +86,44 @@ $color-strong-cyan: hsl(172, 67%, 45%);
 
   .bill {
     label {
-        display: block;
-        color: $color-very-dark-grayish-cyan;
+      display: block;
+      color: $color-very-dark-grayish-cyan;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+  
+    .input-wrapper {
+      position: relative;
+  
+      input {
+        width: 100%;
+        padding: 8px 16px 8px 40px;  // Left padding for icon
+        border-radius: 8px;
+        border: none;
+        text-align: right;
+        font-size: 24px;
         font-weight: 700;
+        background-color: $color-light-grayish-cyan;
+        color: $color-very-dark-cyan;
+  
+        &::placeholder {
+          color: $color-dark-grayish-cyan;
+        }
+  
+        &:focus {
+          outline: 2px solid $color-strong-cyan;
+        }
+      }
+  
+      .input-icon {
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 15px;   
+        height: 19px;
+        pointer-events: none;
+      }
     }
   }
 
