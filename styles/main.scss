@@ -142,6 +142,7 @@ input[type="number"] {
   }
 
   .tip {
+    margin-bottom: 32px;
     label {
       display: block;
       color: $color-very-dark-grayish-cyan;
@@ -171,7 +172,48 @@ input[type="number"] {
 
     .tip-button:hover {
       background-color: $color-light-grayish-cyan;
-      color: $color-very-dark-cyan;
+      color: $color-very-dark-grayish-cyan;
+    }
+  }
+
+  .number-of-people {
+    margin-bottom: 32px;
+    label {
+      display: block;
+      color: $color-very-dark-grayish-cyan;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .input-wrapper {
+      position: relative;
+      input {
+        width: 100%;
+        padding: 8px 16px 8px 40px;
+        border-radius: 8px;
+        border: none;
+        text-align: right;
+        font-size: 24px;
+        font-weight: 700;
+        background-color: $color-light-grayish-cyan;
+        color: $color-very-dark-cyan;
+
+        &::placeholder {
+          color: $color-dark-grayish-cyan;
+        }
+
+        &:focus {
+          outline: 2px solid $color-strong-cyan;
+        }
+      }
+
+      .input-icon {
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 15px;
+      }
     }
   }
 

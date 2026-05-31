@@ -116,6 +116,9 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   margin: 0;
 }
 
+.tip {
+  margin-bottom: 32px;
+}
 .tip label {
   display: block;
   color: hsl(186, 14%, 43%);
@@ -142,5 +145,45 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 .tip .tip-button:hover {
   background-color: hsl(189, 47%, 97%);
+  color: hsl(186, 14%, 43%);
+}
+
+.number-of-people {
+  margin-bottom: 32px;
+}
+.number-of-people label {
+  display: block;
+  color: hsl(186, 14%, 43%);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.number-of-people .input-wrapper {
+  position: relative;
+}
+.number-of-people .input-wrapper input {
+  width: 100%;
+  padding: 8px 16px 8px 40px;
+  border-radius: 8px;
+  border: none;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: hsl(189, 47%, 97%);
   color: hsl(183, 100%, 15%);
+}
+.number-of-people .input-wrapper input::-moz-placeholder {
+  color: hsl(184, 14%, 56%);
+}
+.number-of-people .input-wrapper input::placeholder {
+  color: hsl(184, 14%, 56%);
+}
+.number-of-people .input-wrapper input:focus {
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+.number-of-people .input-wrapper .input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
 }/*# sourceMappingURL=main.css.map */
