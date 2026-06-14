@@ -64,6 +64,7 @@ $color-light-grayish-cyan: hsl(189, 47%, 97%);
 $color-dark-grayish-cyan: hsl(184, 14%, 56%);
 $color-very-dark-grayish-cyan: hsl(186, 14%, 43%);
 $color-very-dark-cyan: hsl(183, 100%, 15%);
+$color-very-dark-cyan-hover: hsl(183, 100%, 25%);
 $color-strong-cyan: hsl(172, 67%, 45%);
 
   // ========== MAIN STYLES ==========
@@ -217,6 +218,46 @@ input[type="number"] {
     }
   }
 
+  .results {
+    margin-bottom: 32px;
+    background-color: $color-very-dark-cyan;
+    color: $color-white;
+    padding: 24px;
+    border-radius: 16px;
+    .result-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .result-item-label {
+        font-size: 16px;
+        font-weight: 700;
+        span {
+          font-size: 14px;
+          font-weight: 400;
+          color: $color-dark-grayish-cyan;
+        }
+    }
+    .result-item-value {
+      font-size: 24px;
+      font-weight: 700;
+      color: $color-strong-cyan;
+    }
+  }
+  .reset-button {
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: $color-strong-cyan;
+    color: $color-white;
+    font-size: 24px;
+    font-weight: 700;
+  }
 
+  .reset-button:hover {
+    background-color: $color-very-dark-cyan-hover;
+    color: $color-very-dark-grayish-cyan;
+  }
+  }
 
   
